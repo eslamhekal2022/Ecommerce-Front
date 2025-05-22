@@ -42,6 +42,7 @@ const routers = createBrowserRouter([
     element: <Layout />, 
     children: [
       { index: true, element:<ProtectedRoute> <Home /></ProtectedRoute> },
+      { path: "/home", element:<ProtectedRoute> <Home /></ProtectedRoute> },
       { path: "ProductDet/:id", element: <ProductDet /> },      
      
       { path: "adminPanel", element:<AdminRoute> <AdminPanel /></AdminRoute>, children: [
