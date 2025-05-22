@@ -59,7 +59,7 @@ navigate("/")
           onChange={handleChange}
           required
         />
-        <button className="sub-Auth" type="submit">Register</button>
+        <button className="sub-Auth" type="submit">Login</button>
       </form>
       <p className="PAuth">if you don't have an account please        <Link className="GoAuth" to={"/register"}>click here</Link>
       </p>      
