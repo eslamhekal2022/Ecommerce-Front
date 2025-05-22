@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/login`, user);
+      const res = await axios.post(`https://e0863ebc-858b-47b1-85ab-0f762bef5906-00-1s5jiyi0pdzpm.kirk.replit.dev/login`, user);
       if (res.data?.success) {
         localStorage.setItem("token",res.data.token)
         localStorage.setItem("userId",res.data.user.id)
