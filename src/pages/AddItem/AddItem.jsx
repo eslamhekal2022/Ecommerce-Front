@@ -76,7 +76,7 @@ const AddItem = () => {
       <h2> Add a new item </h2>
       <form className="add-item-form" onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="name"  value={formData.name} onChange={handleChange} required />
-        <input type="text" name="description" placeholder="desc" value={formData.description} onChange={handleChange} />
+        <textarea type="text" name="description" placeholder="desc" value={formData.description} onChange={handleChange} ></textarea>
         <input type="number" name="price" placeholder=" price " value={formData.price} onChange={handleChange} required />
         
         <select name="category" value={formData.category} onChange={handleChange} required>
