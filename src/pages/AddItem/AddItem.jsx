@@ -84,7 +84,6 @@ const AddItem = () => {
           <option value="TV">TV</option>
           <option value="Laptop">laptop</option>
         </select>
-
         <button type="button" className="upload-btn" onClick={() => fileInputRef.current.click()}>
           📸 
                   </button>
